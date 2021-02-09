@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/theme.js" defer></script>
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">todo</h1>
+      <button class="theme-btn">
+        <img class="theme-icon" src="./images/icon-moon.svg" alt="dark-mode" />
+      </button>
+    </header>
+    <main>
+      <div class="main-container">
+        <form id="form">
+          <div class="checkbox"></div>
+          <input id="input" type="text" placeholder="Create a new todo..." />
+        </form>
+        <div class="todo-container">
+          <div class="todo">
+            <div class="checkbox"></div>
+            <p class="todo-txt">wake up and do workout</p>
+            <button class="remove-todo">
+              <img src="./images/icon-cross.svg" alt="close-icon" />
+            </button>
+          </div>
+          <div class="todo">
+            <div class="checkbox"></div>
+            <p class="todo-txt">do breakfast</p>
+            <button class="remove-todo">
+              <img src="./images/icon-cross.svg" alt="close-icon" />
+            </button>
+          </div>
+          <div class="todo">
+            <div class="checkbox"></div>
+            <p class="todo-txt">Code all the day</p>
+            <button class="remove-todo">
+              <img src="./images/icon-cross.svg" alt="close-icon" />
+            </button>
+          </div>
+          <div class="todo">
+            <div class="checkbox"></div>
+            <p class="todo-txt">sleep and repeat</p>
+            <button class="remove-todo">
+              <img src="./images/icon-cross.svg" alt="close-icon" />
+            </button>
+          </div>
+        </div>
+        <div class="todo-info">
+          <p class="info-p items-left"><span>5</span> items left</p>
+          <div class="todo-filters">
+            <button class="todo-filter active" id="all">All</button>
+            <button class="todo-filter" id="active">Active</button>
+            <button class="todo-filter" id="completed">Completed</button>
+          </div>
+          <button id="clear-completed">Clear Completed</button>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      <h4>Challenge by</h4>
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor.
+      </a>
+      <h4>Coded by</h4>
+      <a href="https://github.com/Aditya6101"> Aditya.</a>
+    </div>
+  </body>
+</html>

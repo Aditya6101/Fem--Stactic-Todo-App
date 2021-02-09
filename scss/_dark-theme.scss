@@ -1,0 +1,60 @@
+body.dark {
+  main {
+    background-color: $very-dark-blue;
+    .main-container {
+      #form {
+        background-color: $very-dark-unsaturated-blue;
+        #input {
+          color: $dark-grayish-blue;
+          &:focus {
+            color: $light-grayish-blue;
+          }
+        }
+      }
+      .todo-container {
+        background-color: $very-dark-unsaturated-blue;
+
+        .todo {
+          border-bottom: 1px solid hsl(234, 11%, 52%);
+          .todo-txt {
+            color: $light-grayish-blue;
+          }
+          .todo-txt.completed {
+            color: $dark-grayish-blue;
+          }
+        }
+      }
+    }
+    .todo-info {
+      color: $dark-grayish-blue;
+      background-color: $very-dark-unsaturated-blue;
+      .todo-filters {
+        background-color: $very-dark-unsaturated-blue;
+        .todo-filter {
+          margin: 0 0.5rem;
+          font-size: 1rem;
+          font-weight: $bold;
+          color: $dark-grayish-blue;
+          cursor: pointer;
+          transition: color 0.3s ease-in;
+          &:hover {
+            color: $light-grayish-blue-hover;
+          }
+        }
+        .todo-filter.active {
+          color: $bright-blue;
+        }
+      }
+      #clear-completed:hover {
+        color: $light-grayish-blue-hover;
+      }
+    }
+  }
+  .checkbox {
+    background-color: $very-dark-unsaturated-blue;
+    border: 1px solid $very-dark-grayish-blue;
+    &:hover {
+      border-color: $bright-blue;
+    }
+  }
+}

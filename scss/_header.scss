@@ -1,0 +1,17 @@
+header {
+  min-height: 45vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 3rem 5%;
+  .heading {
+    font-size: 2rem;
+    font-weight: $bold;
+    letter-spacing: 1rem;
+    color: $very-light-gray;
+    text-transform: uppercase;
+  }
+}
